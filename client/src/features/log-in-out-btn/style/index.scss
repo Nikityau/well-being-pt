@@ -1,0 +1,33 @@
+.log-io-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background: none;
+  border: none;
+
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+
+  svg {
+    stroke: #989EA8;
+    fill: none;
+
+    transition: .3s ease-in;
+  }
+
+  p {
+    transition: .3s ease-in;
+  }
+
+  color: var(--text-color-g);
+
+  &:hover {
+    svg {
+      stroke: var(--text-color-red);
+    }
+
+    color: var(--text-color-red);
+  }
+}

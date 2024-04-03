@@ -1,0 +1,18 @@
+.number-circle {
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--text-color-purple);
+
+  color: var(--text-color-w);
+
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}

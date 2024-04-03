@@ -1,0 +1,35 @@
+.nav-block-inner {
+  .nav-block-inner__arrow {
+    transition: all .3s ease-in-out;
+  }
+}
+
+.nav-block__links {
+  height: 0;
+  overflow: hidden;
+
+  padding-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  transition: all .3s ease-in-out;
+
+  .nav-block__plug {
+    width: 20px ;
+  }
+}
+
+.nav-block-inner_open {
+  .nav-block-inner__arrow {
+    transform: rotate(180deg);
+  }
+}
+
+.nav-block-inner_open {
+  .nav-block__links {
+    height: 100px;
+  }
+}
+

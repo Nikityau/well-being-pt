@@ -1,0 +1,22 @@
+.nav-block {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  .nav-block__icon {
+    display: flex;
+    align-items: center;
+
+    svg {
+      stroke: var(--nav-color);
+    }
+  }
+
+  .nav-block__title {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+    color: var(--nav-color);
+  }
+}
