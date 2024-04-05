@@ -1,5 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
-import {NavLink} from "react-router-dom";
+import React, {useState} from 'react';
 
 import {nav} from "./data/nav";
 
@@ -14,10 +13,11 @@ import './style/index.scss'
 
 const PagesNavigation = () => {
 
-    const refLink = useRef<HTMLAnchorElement>()
     const [topOffset, setTopOffset] = useState<number>(0)
-    const [currIndex, setCurrIndex] = useState<number>(0)
 
+    const onSetOffset = (v: number) => {
+        //setTopOffset(v)
+    }
 
     return (
         <div className={'pages-navigation'}>
@@ -37,52 +37,35 @@ const PagesNavigation = () => {
 
                     if (n.receiveNotes) {
                         return (
-                            <NavLink
-                                to={n.link}
+                            <RenderWatcher
                                 key={n.id}
-                                ref={currIndex === i ? refLink : null}
-                                className={({isActive}) => {
-                                    if(isActive) setCurrIndex(i)
-                                    return ''
-                                }}
-                            >
-                                <RenderWatcher
-                                    watcher={n.receiveNotes}
-                                    render={(number: number) => (
-                                        <NavBlock
-                                            link={n.link}
-                                            id={n.id}
-                                            icon={n.icon}
-                                            title={n.title}
-                                            node={
-                                                <NumberCircle number={number}/>
-                                            }
-                                        />
-                                    )}
-                                />
-                            </NavLink>
+                                watcher={n.receiveNotes}
+                                render={(number: number) => (
+                                    <NavBlock
+                                        onCurrent={onSetOffset}
+                                        link={n.link}
+                                        id={n.id}
+                                        icon={n.icon}
+                                        title={n.title}
+                                        node={
+                                            <NumberCircle number={number}/>
+                                        }
+                                    />
+                                )}
+                            />
                         )
                     }
 
                     return (
-                       <NavLink
-                           to={n.link}
-                           key={n.id}
-                           ref={currIndex === i ? refLink : null}
-                           className={({isActive}) => {
-                               if(isActive) setCurrIndex(i)
-                               return ''
-                           }}
-                       >
-                           <NavBlock
-
-                               link={n.link}
-                               id={n.id}
-                               icon={n.icon}
-                               title={n.title}
-                               node={null}
-                           />
-                       </NavLink>
+                        <NavBlock
+                            onCurrent={onSetOffset}
+                            key={n.id}
+                            link={n.link}
+                            id={n.id}
+                            icon={n.icon}
+                            title={n.title}
+                            node={null}
+                        />
                     )
                 })
             }

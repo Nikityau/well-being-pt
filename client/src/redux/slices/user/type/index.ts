@@ -2,6 +2,7 @@ import {TAction} from "../../../types/action";
 import {UserActions} from "../actions";
 
 export interface TUser {
+    id?: string
     name: string,
     surname: string,
     avatar?: string

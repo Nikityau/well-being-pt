@@ -3,6 +3,14 @@
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
 .app {
   width: 100vw;
   height: 100vh;
@@ -16,10 +24,17 @@
   gap: 10px;
 }
 
-button {
-  cursor: pointer;
+.pages-wrapper {
+  padding: 20px;
 }
 
-a {
-  text-decoration: none;
+.pages-wrapper__container {
+  height: 100%;
+
+  background: var(--text-color-w);
+  border-radius: 30px;
+
+  display: grid;
+  grid-template-columns: auto 500px;
 }
+

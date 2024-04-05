@@ -29,7 +29,7 @@ const NavBlockInner: FC<Props> = (
         )}>
             <NavBlock
                 onClick={swtch}
-                link={link}
+                link={'#'}
                 id={id}
                 icon={icon}
                 title={title}
@@ -47,7 +47,7 @@ const NavBlockInner: FC<Props> = (
                     inner.map(i => (
                         <NavBlock
                             key={i.id}
-                            link={i.link}
+                            link={`${link}/${i.link}`}
                             id={i.id}
                             icon={<div className={'nav-block__plug'} />}
                             title={i.title}
