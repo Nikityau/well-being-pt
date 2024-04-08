@@ -2,7 +2,7 @@ import React from 'react';
 
 const InnerSideBar = () => {
     return (
-        <div>
+        <div className={'inner-side-bar'} id={'inner-side-bar'}>
             inner
         </div>
     );

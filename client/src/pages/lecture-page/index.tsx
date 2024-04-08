@@ -6,6 +6,7 @@ import Category from "./ui/category";
 
 import './style/index.scss'
 import LectureCard from "../../entities/lecture-card";
+import {Link} from "react-router-dom";
 
 type Props = {
     title: string,
@@ -49,16 +50,17 @@ const LecturePage: FC<Props> = (
             <div className={'lecture-page__list'}>
                 {
                     filteredLectures.map(l => (
-                        <LectureCard
-                            key={l.id}
-                            preview={l.preview}
-                            title={l.title}
-                            description={l.description}
-                            date={l.date}
-                            subscribers={l.subscribers}
-                            lecturer={l.lecturer}
-                            category={l.category}
-                        />
+                        <Link to={`/well-being/pt/lecture/${l.id}`} key={l.id}>
+                            <LectureCard
+                                preview={l.preview}
+                                title={l.title}
+                                description={l.description}
+                                date={l.date}
+                                subscribers={l.subscribers}
+                                lecturer={l.lecturer}
+                                category={l.category}
+                            />
+                        </Link>
                     ))
                 }
             </div>

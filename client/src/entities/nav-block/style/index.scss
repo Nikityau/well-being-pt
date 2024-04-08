@@ -9,6 +9,8 @@
 
     svg {
       stroke: var(--nav-color);
+
+      transition: all .3s ease-in-out;
     }
   }
 
@@ -18,5 +20,20 @@
     font-weight: 500;
 
     color: var(--nav-color);
+
+    transition: all .3s ease-in-out;
+  }
+}
+
+.nav-block_current {
+  .nav-block__icon {
+    svg {
+      stroke: var(--text-color-blue);
+    }
+  }
+
+
+  .nav-block__title {
+    color: var(--text-color-blue)
   }
 }

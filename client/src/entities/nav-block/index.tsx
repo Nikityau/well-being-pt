@@ -24,22 +24,16 @@ const NavBlock: FC<Props> = (
         onCurrent
     }) => {
 
-    const div = useRef<HTMLAnchorElement>();
-
-
-    const onActive = () => {
-        const topOffset = div.current?.offsetTop;
-        onCurrent?.(topOffset);
-    }
 
     return (
         <NavLink
             to={link}
-            ref={div}
-            className={({isActive}) => {
-                if(isActive) onActive();
 
-                return ''
+            className={({isActive}) => {
+                if(link === '#') return ''
+
+                if (isActive)
+                    return 'nav-block_current'
             }}
         >
             <div className={'nav-block'} onClick={onClick}>

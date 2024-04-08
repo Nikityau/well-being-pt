@@ -15,7 +15,7 @@ export const lecturesData: Array<TLecture> = [
         preview: '',
         date: '12.11.2025',
         title: 'Эмоциональное выгорание: диагностика и профилактика',
-        description: 'Что такое эмоциональное выгорание? На лекции разберем причины возникновения, диагностику и методы лечения...',
+        description: 'Что такое эмоциональное выгорание? На лекции разберём причины возникновения, диагностику и методы лечения эмоционального выгорания',
         subscribers: [
             {
                 id: nanoid(),
@@ -100,6 +100,48 @@ export const lecturesData: Array<TLecture> = [
         date: '12.11.2025',
         title: 'Эмоциональное выгорание: диагностика и профилактика',
         description: 'Что такое эмоциональное выгорание? На лекции разберем причины возникновения, диагностику и методы лечения...',
+        subscribers: [
+            {
+                id: nanoid(),
+                name: 'Jack',
+                surname: 'Sparrow'
+            },
+            {
+                id: nanoid(),
+                name: 'Jack',
+                surname: 'Sparrow'
+            },
+            {
+                id: nanoid(),
+                name: 'Jack',
+                surname: 'Sparrow'
+            },
+            {
+                id: nanoid(),
+                name: 'Jack',
+                surname: 'Sparrow'
+            },
+            {
+                id: nanoid(),
+                name: 'Jack',
+                surname: 'Sparrow'
+            },
+        ]
+    },
+    {
+        id: nanoid(),
+        lecturer: {
+            name: 'Jack',
+            surname: 'Sparrow'
+        },
+        category: {
+            id: nanoid(),
+            category: 'ЛФК'
+        },
+        preview: '',
+        date: '12.11.2025',
+        title: 'Эмоциональное выгорание: диагностика и профилактика',
+        description: 'Что такое эмоциональное выгорание? На лекции разберём причины возникновения, диагностику и методы лечения эмоционального выгорания',
         subscribers: [
             {
                 id: nanoid(),

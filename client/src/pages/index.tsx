@@ -4,6 +4,7 @@ import PtWrapper from "./wrappers/pt-wrapper";
 import LoginPage from "./login";
 import MainPage from "./main-page";
 import ArchivePage from "./archive-page";
+import ChosenLecturePage from "./chosen-lecture-page";
 
 const AppRouter = () => {
     return (
@@ -13,6 +14,7 @@ const AppRouter = () => {
                     <Route path={'main'} element={<MainPage/>}/>
                     <Route path={'notifications'} element={'notifications'}/>
                     <Route path={'archive'} element={<ArchivePage/>}/>
+                    <Route path={'lecture/:id'} element={<ChosenLecturePage/>}/>
                 </Route>
                 <Route path={'login'} element={<LoginPage/>}/>
 

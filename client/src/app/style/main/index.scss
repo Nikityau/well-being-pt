@@ -38,3 +38,14 @@ a {
   grid-template-columns: auto 500px;
 }
 
+*::-webkit-scrollbar-thumb {
+  width: 6px;
+  height: 6px;
+
+  background: #7A59F7;
+  border-radius: 20px;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}

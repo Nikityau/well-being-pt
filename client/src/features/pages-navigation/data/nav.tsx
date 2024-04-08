@@ -41,7 +41,7 @@ export const nav: Array<TNavBlock> = [
         id: nanoid(),
         icon: (
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="3" y="3" width="22" height="22" rx="5" stroke="#989EA8" strokeWidth="2"/>
+                <rect x="3" y="3" width="22" height="22" rx="5" strokeWidth="2"/>
                 <path d="M11.8001 19.5H16.2001" strokeWidth="2" strokeLinecap="round"
                       strokeLinejoin="round"/>
                 <path d="M10.7001 2.99995L10.7001 10.7L14.0001 9.59995L17.3001 10.7L17.3001 3.54995"

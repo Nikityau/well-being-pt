@@ -1,0 +1,47 @@
+.chosen-lecture__user-info {
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.button_subscribed {
+  background: transparent;
+  color: #558BF6;
+  outline: 2px solid #558BF6;
+}
+
+.input_size_l {
+  input {
+    width: 630px;
+  }
+}
+
+.button_hover {
+  &:hover {
+    color: #fff;
+    background: #175DE8;
+  }
+}
+
+.chosen-lecture__user-comment {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-review {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+
+  color: #989EA8;
+
+  .user-review__container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

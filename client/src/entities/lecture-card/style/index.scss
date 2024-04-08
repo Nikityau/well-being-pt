@@ -1,0 +1,83 @@
+.lecture-card {
+  position: relative;
+
+  max-width: 1027px;
+  width: 100%;
+
+  padding: 20px;
+
+  background: #EBF2FF;
+
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  cursor: pointer;
+
+  .lecture-card__preview {
+    width: 318px;
+    height: 218px;
+
+    border-radius: 20px;
+
+    background: var(--text-color-purple-light);
+  }
+
+  .lecture-card__info {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+
+    .title-ui {
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    .lecture-card__lecturer,
+    .lecture-card__description,
+    .lecture-card__date {
+      font-family: Inter, sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+
+      max-width: 550px;
+
+      color: var(--bg-color)
+    }
+    .lecture-card__description,
+    .lecture-card__date {
+      font-size: 18px;
+      font-weight: 400;
+    }
+    .lecture-card__date {
+      span {
+        font-family: Grotesque, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+
+        color: var(--bg-color);
+      }
+    }
+  }
+
+  .lecture-card__pointer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 14px ;
+
+    background: #558BF6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
