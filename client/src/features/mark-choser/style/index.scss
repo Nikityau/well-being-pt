@@ -1,0 +1,40 @@
+.mark-choser {
+  margin-top: 20px;
+
+  .title-ui {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #191919;
+  }
+
+  .mark-choser__list {
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .mark-choser__mark {
+      cursor: pointer;
+
+      padding: 8px 14px;
+
+      border: 2px solid #CBA7FA;
+      border-radius: 12px;
+
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+
+      color: #191919;
+
+      transition: all .2s ease-in-out ;
+    }
+
+    .mark-choser__mark_active {
+      background: #CBA7FA;
+    }
+  }
+}

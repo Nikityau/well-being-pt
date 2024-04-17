@@ -1,0 +1,107 @@
+.chosen-lecture-side-bar {
+  padding: 70px 25px;
+
+  h4 {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #989EA8;
+  }
+
+  p {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    color: #191919;
+  }
+
+  .clsb__about-lecturer {
+    margin-top: 60px;
+
+    h4 {
+      margin-bottom: 10px;
+    }
+
+    .clsb__lecturer-info {
+      display: grid;
+      grid-template-columns: auto 100px;
+      align-items: flex-start;
+      gap: 5px;
+
+      span {
+        font-family: Inter, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+
+      }
+
+      p {
+        margin-top: 10px;
+
+        font-family: Inter, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      .clsb__avatar {
+        width: 96px;
+        height: 96px;
+
+        border-radius: 12px;
+
+        background: var(--text-color-blue);
+
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .clsb__materials {
+    margin-top: 30px;
+  }
+
+  .clsb__materials-list {
+    margin-top: 10px;
+  }
+
+  .clsb__material {
+    margin-top: 10px;
+
+    p, a {
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+
+      color: #191919;
+    }
+
+    a {
+      font-weight: 400;
+
+    }
+  }
+}
+
+.admin-bttns {
+  margin-top: 40px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+
+  .admin-bttns__upd {
+    border: 2px solid #558BF6;
+    background: transparent;
+
+    color: #558BF6;
+  }
+
+  .admin-bttns__delete {
+    background: transparent;
+    color: #E26060B2;
+  }
+}
+

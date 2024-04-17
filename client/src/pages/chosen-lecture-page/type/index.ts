@@ -20,5 +20,5 @@ export interface TLecturePage extends Omit<TLecture, 'lecturer'> {
     isActive: boolean
     isEnd: boolean
     isSubscribe: boolean,
-    reviews: Array<string>
+    reviews: Array<string>,
 }

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Title from "../../../shared/ui/title";
 import Button from "../../../shared/ui/button";
 import InputField from "../../../shared/ui/input-field";
+import MarkChoser from "../../../features/mark-choser";
 
 const UserReview = () => {
 
@@ -16,15 +17,22 @@ const UserReview = () => {
             }
             {
                 !isSend &&
-                <div className={'user-review__container'}>
-                    <InputField
-                        title={'Оставьте отзыв или пожелания'}
-                        value={''}
-                    />
-                    <Button onClick={() => setIs(true)}>
-                        Отправить
-                    </Button>
-                </div>
+                <>
+                    <MarkChoser onChange={(mark) => {
+                        console.log('mark', mark)
+                    }}/>
+                    <div className={'user-review__container'}>
+                        <InputField
+                            title={'Оставьте отзыв или пожелания'}
+                            value={''}
+                        />
+                        <Button onClick={() => setIs(true)}>
+                            Отправить
+                        </Button>
+                    </div>
+                </>
+
+
             }
         </div>
     );

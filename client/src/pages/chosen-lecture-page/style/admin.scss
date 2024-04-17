@@ -1,0 +1,65 @@
+.admin-statistic {
+  width: fit-content;
+
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .title-ui {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #989EA8;
+  }
+
+  .admin-statistic__stats {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #191919;
+
+    span[data-mark] {
+      font-family: GetVoIP Grotesque, sans-serif;
+      font-size: 34px;
+      font-weight: 700;
+    }
+  }
+
+  .admin-statistic__reviews {
+    height: 80px;
+    overflow-y: scroll;
+
+    padding-right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+
+    .admin-statistic__review {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      font-family: Inter, sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+
+      color: #191919;
+
+      span {
+        font-weight: 400;
+        font-size: 16px;
+        color: #989EA8;
+      }
+    }
+  }
+}

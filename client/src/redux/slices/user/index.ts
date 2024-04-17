@@ -8,7 +8,7 @@ const initState: TUserState = {
         name: 'Jack',
         surname: 'Sparrow'
     },
-    role: 'user'
+    role: 'admin'
 }
 
 export const userReducer = (state = initState, {type, payload}: TUserAction) => {

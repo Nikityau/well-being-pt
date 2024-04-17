@@ -54,8 +54,16 @@ const ChosenLecturePage = () => {
                 isSubscribe={state.isSubscribe}
                 onSubscribe={onSubscribe}
                 onAddQuestion={onAddQuestion}
+                reviews={state.reviews}
             />
-            <SideBar/>
+            <SideBar
+                isActive={state.isActive}
+                isEnd={state.isEnd}
+                lecturer={state.lecturer}
+                description={state.description}
+                materials={state.materials}
+                userRole={userRole}
+            />
         </>
     );
 };

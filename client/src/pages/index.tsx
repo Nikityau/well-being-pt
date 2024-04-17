@@ -15,6 +15,8 @@ const AppRouter = () => {
                     <Route path={'notifications'} element={'notifications'}/>
                     <Route path={'archive'} element={<ArchivePage/>}/>
                     <Route path={'lecture/:id'} element={<ChosenLecturePage/>}/>
+
+                    <Route path={''} element={<Navigate to={'main'}/>}/>
                 </Route>
                 <Route path={'login'} element={<LoginPage/>}/>
 

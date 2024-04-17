@@ -29,7 +29,8 @@ const Lecture: FC<Props> = (
         category,
         onSubscribe,
         isSubscribe,
-        onAddQuestion
+        onAddQuestion,
+        reviews
     }) => {
     return (
         <div className={'chosen-lecture'}>
@@ -58,7 +59,9 @@ const Lecture: FC<Props> = (
             </div>
             {
                 userRole === 'admin' &&
-                <AdminStatistic/>
+                <AdminStatistic
+                   reviews={reviews}
+                />
             }
             {
                 userRole === 'user' &&
